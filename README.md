@@ -1,2 +1,4 @@
-# Portfolio
-The modern portfolio, built using React.js, features a minimalist design, CSS and SCSS styling, and smooth animations, showcasing professional achievements and skills on various devices.
+![image](https://github.com/Ganeshkumar1007/Portfolio/assets/78259569/cc3ebc85-cf73-421b-b56f-6c9a69126097)# Portfolio
+Crafted with React.js, this dynamic portfolio showcases a blend of creativity and technical expertise. Its sleek design, powered by CSS and SCSS styling, captivates visitors while ensuring responsiveness across devices. Utilizing Framer Motion for seamless animations, the portfolio elegantly presents details on skills, internships, and projects. An interactive navbar, complete with a sidebar and smooth-scrolling functionality, enhances user experience. With GitHub and LinkedIn integration, this portfolio seamlessly bridges personal and professional aspects, reflecting a commitment to both aesthetics and functionality.
+
+Demo Link : https://6597dd53b94d7006437465a5--storied-rabanadas-54f705.netlify.app/
