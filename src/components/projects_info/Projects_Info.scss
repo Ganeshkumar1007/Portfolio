@@ -1,0 +1,228 @@
+@import "../../app.scss";
+.projects_Info{
+    position: relative;
+    .progress{
+        position: sticky;
+        top:0;
+        left: 0;
+        padding-top: 50px;
+        text-align: center;
+        color: orange;
+        font-size: 36px;
+        letter-spacing: 5px;
+
+        @include mobile{
+           display: none;
+        }
+        @include tablet{
+            padding-top: 10px;
+            // bottom: 0;
+            font-size: 30px;
+         }
+
+         @include mobile_large{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10px;
+        //    bottom: 0;
+           font-size: 24px;
+          }
+
+          @include desktop{
+            padding-top: 10px;
+            font-size: 24px;
+          }
+       
+        .progressBar{
+            height: 10px;
+            background-color: white;
+            @include mobile_large{
+                display: flex;
+                height: 10px;
+            background-color: white;
+              
+              }
+        }
+
+
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .wrapper{
+            max-width: 1366px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            @include mobile{
+                // transform: none !important;
+               flex-direction: column;
+                gap:0px;
+            }
+
+            @include tablet{
+                // transform: none !important;
+               flex-direction: column;
+               margin-top: 100px;
+                gap:40px;
+            }
+            @include mobile_large{
+                flex-direction: column;
+                gap:10px;
+              }
+              @include desktop{
+                flex-direction: column;
+               margin-top: 100px;
+
+                gap:50px;
+              }
+
+
+            .imageContainer{
+               flex:1;
+                height: 50%; 
+
+                @include mobile{
+                    width: 100%;
+                    max-height: 300px;
+                    margin-top: 50px;
+
+                }
+                @include tablet{
+                    width: 100%;
+                    // max-height: 300px;
+                }
+                @include desktop{
+                    width: 100%;
+                    // max-height: 300px;
+                }
+                @include mobile_large{
+                    width: 100%;
+                    // max-height: 300px;
+                    margin-top: 80px;
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+
+                @include mobile{
+                    object-fit: contain;
+                    padding: 0px 10px;
+                }
+
+                @include tablet{
+                    object-fit: contain;
+                    padding: 20px;
+                }
+                @include mobile_large{
+                    object-fit: contain;
+                    padding: 0px 10px;
+                }
+                @include desktop{
+                    object-fit: contain;
+                    padding: 0px 30px;
+                }
+            }
+            
+            .textContainer{
+                flex:1;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                @include mobile{
+                   transform: none !important;
+                   padding: 10px;
+                   align-items: center;
+                   text-align: center;
+                }
+                @include tablet{
+                    transform: none !important;
+                    padding: 20px;
+                    align-items: center;
+                    text-align: center;
+                 }
+                 @include mobile_large{
+                    transform: none !important;
+                    padding: 0px 10px;
+                    align-items: center;
+                    text-align: center;
+                 }
+                 @include desktop{
+                    transform: none !important;
+                    padding: 0px 30px;
+                    align-items: center;
+                    text-align: center;
+                 }
+
+                h2{
+                    font-size: 72px;
+                    letter-spacing: 3px;
+                    @include mobile{
+                        font-size: 36px;
+                    }
+                    @include tablet{
+                        font-size: 60px;
+                    }
+                    @include mobile_large{
+                        font-size: 30px;
+                    }
+                    @include desktop{
+                        font-size: 60px;
+                    }
+
+                }
+                p{
+                    color: gray;
+                    font-size: 20px;
+                    @include mobile{
+                        font-size: 16px;
+                    }
+                    @include tablet{
+                        font-size: 30px;
+                    }
+                    @include mobile_large{
+                        font-size: 16px;
+                    }
+                    @include desktop{
+                        font-size: 30px;
+                    }
+                }
+                button{
+                    background-color: orange;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 10px;
+                    width: 200px;
+                    cursor: pointer;
+                    @include tablet{
+                        padding: 20px;
+                        font-size: 20px;
+                    }
+                    @include mobile_large{
+                        padding: 15px;
+                        font-size: 15px;
+                    }
+                    @include desktop{
+                        padding: 15px;
+                        font-size: 15px;
+                    }
+
+                }
+            }
+        }
+    }
+}

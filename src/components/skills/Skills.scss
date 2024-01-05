@@ -1,0 +1,10 @@
+@import "../../app.scss";
+.skills{
+    background: linear-gradient(180deg, #0c0c1d, #111132); //180 deg to color from top.
+
+    .title{
+        @include mobile{
+            height: 100% !important;
+        }
+    }
+}

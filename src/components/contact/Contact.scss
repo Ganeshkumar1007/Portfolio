@@ -1,0 +1,211 @@
+@import "../../app.scss";
+
+.contact{
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    @include mobile{
+        width: 100%;
+       padding: 10px;
+       flex-direction: column;
+       gap:0px;
+    }
+
+    @include tablet{
+        width: 100%;
+       padding: 10px;
+       flex-direction: column;
+    }
+    @include mobile_large{
+        width: 100%;
+       padding: 10px;
+       flex-direction: column;
+       gap:0px;
+    }
+    @include desktop{
+        width: 100%;
+       padding: 10px;
+       flex-direction: column;
+    }
+    .textContainer{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        @include mobile{
+          gap: 20px;
+          text-align: center;
+          align-items: center;
+          margin-top: 70px;
+
+        }
+        @include tablet{
+            gap: 30px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+          }
+          @include desktop{
+            gap: 30px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+          }
+          @include mobile_large{
+            gap: 0px;
+            text-align: center;
+            align-items: center;
+            margin-top: 70px;
+            
+          }
+
+        h1{
+            font-size: 100px;
+            line-height: 88px;
+            @include mobile{
+                font-size: 36px;
+            }
+            @include tablet{
+                font-size: 70px;
+            }
+
+            @include mobile_large{
+                font-size: 50px;
+            }
+            
+        }
+        h2{
+            @include mobile_large{
+                font-size: 30px !important;
+            }
+            @include tablet{
+                font-size: 40px;
+            }
+            @include desktop{
+                font-size: 40px;
+            }
+        }
+        span{
+            font-weight: 300;
+            @include mobile_large{
+                font-size: 20px !important;
+            }
+            @include tablet{
+                font-size: 30px;
+            }
+            @include desktop{
+                font-size: 30px;
+            }
+        }
+
+
+    }
+    .formContainer{
+        flex:1;
+        position: relative;
+        align-items: center;
+
+        @include mobile{
+            width: 100%;
+            padding: 20px;
+        }    
+        @include tablet{
+            width: 100%;
+            padding: 30px;
+        }       
+        @include mobile_large{
+            width: 100%;
+            padding: 20px;
+        }    
+        @include desktop{
+            width: 100%;
+            padding: 30px;
+        }  
+        .phoneSvg{
+            stroke: orange;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
+            width: 450px;
+            height: 450px;
+            top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+            
+            @include mobile{
+                width: 200px;
+                height: 200px;
+                
+            }
+            @include tablet{
+                width: 40%;
+                height: 40%;
+               
+            }
+            @include desktop{
+                width: 30%;
+                height: 30%;
+               
+            }
+        }
+       
+        form{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+    
+            input, textarea{
+                padding: 20px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                border-radius: 5px;
+
+                @include mobile{
+                    padding: 5px;
+                }
+                @include tablet{
+                    padding: 30px;
+                    font-size: 20px;
+                }
+                @include mobile_large{
+                    padding: 5px;
+                }
+                @include desktop{
+                    padding: 30px;
+                    font-size: 20px;
+                }
+                
+            }
+            button{
+                padding: 20px;
+                border: none;
+                background-color: orange;
+                cursor: pointer;
+                font-weight: 500;
+                border-radius: 5px;
+                @include mobile{
+                    padding: 10px;
+                }
+                @include tablet{
+                    padding: 20px;
+                    font-size: 20px;
+                }
+                @include desktop{
+                    padding: 20px;
+                    font-size: 20px;
+                }
+                @include mobile_large{
+                    padding: 15px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
